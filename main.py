@@ -8,6 +8,10 @@ from local_storage import local_storage
 #db = Database()
 
 #fm.Theme.set_theme(theme="blue")
+# checks if android to ask permission to use phone storage
+# if platform == "android":
+# from android.permissions import request_permissions, Permission,
+# request_permissions([Permission.READ_EXTERNAL_STORAGE, Permission.WRITE_EXTERNAL_STORAGE])
 
 class Task(ft.Column):
     def __init__(self, task_name, task_status_change, task_delete, database:local_storage, completed=False, pk=None):
